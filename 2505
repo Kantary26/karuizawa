@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GW軽井沢旅行 2025年5月1日～2日</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #3e6259;
+      --secondary-color: #b8d1c5;
+      --accent-color: #fdfdf6;
+      --text-color: #2c3e50;
+      --highlight-color: #d35400;
+    }
+    body {
+      font-family: 'Noto Serif JP', 'Yu Mincho', 'MS PMincho', serif;
+      background-color: #f9f9f7;
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .tab {
+      padding: 0.8rem 1.5rem;
+      background-color: var(--secondary-color);
+      color: white;
+      border-radius: 5px 5px 0 0;
+      cursor: pointer;
+      margin: 0.2rem;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .tab:hover {
+      opacity: 0.85;
+      transform: translateY(-2px);
+    }
+    .tab.active {
+      background-color: var(--primary-color);
+    }
+    .content {
+      display: none;
+      background-color: white;
+      border-radius: 5px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+    }
+    .content.active {
+      display: block;
+      opacity: 1;
+    }
+    .event {
+      border-left: 3px solid var(--primary-color);
+      padding: 0.5rem 1rem;
+      margin-bottom: 1rem;
+      background-color: var(--accent-color);
+      border-radius: 0 5px 5px 0;
+      transition: transform 0.2s ease;
+    }
+    .event:hover {
+      transform: scale(1.01);
+    }
+    .event-time {
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+    .event-title {
+      font-size: 1.1rem;
+      margin: 0.3rem 0;
+    }
+    .event-details {
+      font-size: 0.95rem;
+    }
+    .food-icon {
+      color: var(--highlight-color);
+    }
+    .links {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+    }
+    .links a {
+      color: #3498db;
+      text-decoration: none;
+      margin-right: 0.8rem;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    .notes {
+      background-color: white;
+      border-radius: 5px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    .notes h2 {
+      font-size: 1.3rem;
+      color: var(--primary-color);
+      margin-top: 0;
+    }
+    textarea {
+      width: 100%;
+      min-height: 120px;
+      border: 1px solid var(--secondary-color);
+      border-radius: 5px;
+      padding: 0.8rem;
+      font-family: inherit;
+      resize: vertical;
+    }
+    #lastSaved {
+      display: block;
+      color: #aaa;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+    }
+    footer {
+      text-align: center;
+      margin: 2rem 0;
+      font-size: 0.8rem;
+      color: #7f8c8d;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .tabs {
+        flex-direction: column;
+        align-items: center;
+      }
+      .tab {
+        width: 90%;
+        text-align: center;
+        border-radius: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GW軽井沢旅行</h1>
+    <p>2025年5月1日～2日</p>
+  </header>
+
+  <div class="container">
+    <div class="tabs">
+      <div class="tab" onclick="showTab(0)">5月1日（木）</div>
+      <div class="tab" onclick="showTab(1)">5月2日（金）</div>
+    </div>
+
+    <div class="content">
+      <h2>5月1日（木） スケジュール</h2>
+
+      <div class="event">
+        <div class="event-time">13:04 - 14:15</div>
+        <div class="event-title">東京→軽井沢 移動</div>
+        <div class="event-details">
+          あさま６１３号（北陸新幹線）<br>
+          座席：6号車 11番A/B<br>
+          昼食：電車内
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-time">14:15</div>
+        <div class="event-title">軽井沢駅到着</div>
+      </div>
+
+      <div class="event">
+        <div class="event-time">午後</div>
+        <div class="event-title">候補地</div>
+        <div class="event-details">
+          <p><span class="food-icon">🍴</span> 川上庵</p>
+          <div class="links">
+            <a href="https://tabelog.com/nagano/A2003/A200301/20000299/" target="_blank">食べログ</a>
+            <a href="https://maps.app.goo.gl/QLF4fy4HCTEE1HvJ9" target="_blank">地図</a>
+          </div>
+
+          <p>・旧軽井沢銀座通り</p>
+          <div class="links">
+            <a href="https://maps.app.goo.gl/TySYPi5T6aLHNFtQ9" target="_blank">地図</a>
+            <a href="https://www.karukayado.org/ginza/" target="_blank">公式</a>
+          </div>
+
+          <p>・ハルニレテラス</p>
+          <div class="links">
+            <a href="https://maps.app.goo.gl/K6eAYvU6cPGCGMrs8" target="_blank">地図</a>
+            <a href="https://www.hoshino-area.jp/archives/area/harunire" target="_blank">公式</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-time">夜</div>
+        <div class="event-title">夕食候補</div>
+        <div class="event-details">
+          <p><span class="food-icon">🍴</span> ななくさ食堂</p>
+          <div class="links">
+            <a href="https://tabelog.com/nagano/A2003/A200301/20001053/" target="_blank">食べログ</a>
+            <a href="https://maps.app.goo.gl/VupdYg3pQn2uwgUW7" target="_blank">地図</a>
+          </div>
+
+          <p><span class="food-icon">🍴</span> むげん</p>
+          <div class="links">
+            <a href="https://tabelog.com/nagano/A2003/A200301/20000308/" target="_blank">食べログ</a>
+            <a href="https://maps.app.goo.gl/fpkzeTQUa9QyeqEt9" target="_blank">地図</a>
+          </div>
+
+          <p><span class="food-icon">🍴</span> bird</p>
+          <div class="links">
+            <a href="https://tabelog.com/nagano/A2003/A200301/20022293/" target="_blank">食べログ</a>
+            <a href="https://maps.app.goo.gl/AZTsGkCzw4XTdN1QA" target="_blank">地図</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>5月2日（金） スケジュール</h2>
+
+      <div class="event">
+        <div class="event-time">朝</div>
+        <div class="event-title">朝食</div>
+        <div class="event-details">ホテルにて</div>
+      </div>
+
+      <div class="event">
+        <div class="event-time">11:00</div>
+        <div class="event-title">チェックアウト</div>
+      </div>
+
+      <div class="event">
+        <div class="event-time">昼</div>
+        <div class="event-title">昼食</div>
+        <div class="event-details">
+          <p><span class="food-icon">🍴</span> osobar</p>
+          <div class="links">
+            <a href="https://tabelog.com/nagano/A2003/A200301/20022289/" target="_blank">食べログ</a>
+            <a href="https://maps.app.goo.gl/b3aEBZnkVufjSM7F7" target="_blank">地図</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-time">午後</div>
+        <div class="event-title">候補地</div>
+        <div class="event-details">
+          <p>・コモングラウンズ</p>
+          <div class="links">
+            <a href="https://maps.app.goo.gl/ZfrbZFP4jZcwqo9z8" target="_blank">地図</a>
+            <a href="https://kg-commongrounds.com/" target="_blank">公式</a>
+          </div>
+
+          <p>・タリアセン</p>
+          <div class="links">
+            <a href="https://maps.app.goo.gl/ypKnTm33w4U3VjKA7" target="_blank">地図</a>
+            <a href="https://www.taliesin.jp/" target="_blank">公式</a>
+          </div>
+
+          <p>・プリンスショッピングプラザ</p>
+          <div class="links">
+            <a href="https://maps.app.goo.gl/dQFWEMo9P2UMEbhi8" target="_blank">地図</a>
+            <a href="https://www.karuizawa-psp.jp/" target="_blank">公式</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-time">19:40 - 20:52</div>
+        <div class="event-title">軽井沢→東京 移動</div>
+        <div class="event-details">自由席（※変更可能）</div>
+      </div>
+    </div>
+
+    <div class="notes">
+      <h2>📝 メモ</h2>
+      <textarea id="tripNotes" placeholder="ここに旅行のメモを書き込んでください..."></textarea>
+      <small id="lastSaved">最終保存: 未保存</small>
+    </div>
+
+    <footer>
+      GW軽井沢旅行 2025年5月1日～2日
+    </footer>
+  </div>
+
+  <script>
+    function showTab(index) {
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.content');
+      tabs.forEach(t => t.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+      tabs[index].classList.add('active');
+      contents[index].classList.add('active');
+    }
+    window.onload = function () {
+      const day = new Date().getDate();
+      showTab(day === 2 ? 1 : 0);
+    };
+    const notesArea = document.getElementById('tripNotes');
+    const lastSaved = document.getElementById('lastSaved');
+    notesArea.value = localStorage.getItem('tripNotes') || '';
+    const savedAt = localStorage.getItem('tripNotesSavedAt');
+    if (savedAt) lastSaved.textContent = `最終保存: ${savedAt}`;
+    notesArea.addEventListener('input', () => {
+      const now = new Date().toLocaleString();
+      localStorage.setItem('tripNotes', notesArea.value);
+      localStorage.setItem('tripNotesSavedAt', now);
+      lastSaved.textContent = `最終保存: ${now}`;
+    });
+  </script>
+</body>
+</html>
