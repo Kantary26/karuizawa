@@ -64,32 +64,13 @@
       text-decoration: underline;
     }
 
-    .place-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1em;
-      margin-top: 1em;
+    ul {
+      list-style: none;
+      padding-left: 1em;
     }
 
-    .place {
-      width: 320px;
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .place img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .place div {
-      padding: 0.5em;
-      font-weight: bold;
+    li {
+      margin-bottom: 0.5em;
     }
 
     h2 {
@@ -97,7 +78,6 @@
       padding-bottom: 0.3em;
       margin-top: 1.5em;
     }
-
   </style>
 </head>
 <body>
@@ -118,36 +98,15 @@
     <p>電車内で軽食</p>
 
     <h2>到着後の行き先候補</h2>
-    <div class="place-list">
-      <div class="place">
-        <a href="https://maps.app.goo.gl/FfDWwNiEQhL7K2cp9" target="_blank">
-          <img src="https://www.kawakamian.com/images/karuizawa.jpg" alt="川上庵">
-          <div>🍴 川上庵</div>
-        </a>
-      </div>
-      <div class="place">
-        <a href="https://maps.app.goo.gl/PwkwDeRtqrbpAHQT9" target="_blank">
-          <img src="https://karuizawa-ginza.org/img/about/about_01.jpg" alt="旧軽井沢銀座通り">
-          <div>・旧軽井沢銀座通り</div>
-        </a>
-      </div>
-      <div class="place">
-        <a href="https://maps.app.goo.gl/Go5US33oUPcwcb4g9" target="_blank">
-          <img src="https://www.hoshino-area.jp/wp-content/themes/harunireterrace/images/common/img_header.jpg" alt="ハルニレテラス">
-          <div>・ハルニレテラス</div>
-        </a>
-      </div>
-    </div>
+    <ul>
+      <li><a href="https://www.google.com/maps/place/旧軽井沢銀座通り/" target="_blank">・旧軽井沢銀座通り</a></li>
+      <li><a href="https://www.google.com/maps/place/ハルニレテラス/" target="_blank">・ハルニレテラス</a></li>
+    </ul>
 
     <h2>夕食</h2>
-    <div class="place-list">
-      <div class="place">
-        <a href="https://maps.app.goo.gl/oRCRhqqC5X5piVby6" target="_blank">
-          <img src="https://lh3.googleusercontent.com/p/AF1QipNbYZh5-7sQZV5qFYPf5gOlskBi0cMZJkTYjsWu=s680-w680-h510" alt="GOOD AFTERNOON">
-          <div>🍴 GOOD AFTERNOON</div>
-        </a>
-      </div>
-    </div>
+    <ul>
+      <li><a href="https://www.google.com/maps/place/GOOD+AFTERNOON/@36.3404624,138.5978945,17z" target="_blank">🍴 GOOD AFTERNOON</a></li>
+    </ul>
   </div>
 
   <div id="day2" class="tab-content">
@@ -158,36 +117,16 @@
     <p>11:00</p>
 
     <h2>昼食</h2>
-    <div class="place-list">
-      <div class="place">
-        <a href="https://maps.app.goo.gl/Lu3yE2PRghhZmhVi9" target="_blank">
-          <img src="https://tblg.k-img.com/restaurant/images/Rvw/101035/640x640_rect_101035080.jpg" alt="osobar">
-          <div>🍴 osobar</div>
-        </a>
-      </div>
-    </div>
+    <ul>
+      <li><a href="https://www.google.com/maps/place/osobar/" target="_blank">🍴 osobar</a></li>
+    </ul>
 
     <h2>行き先候補</h2>
-    <div class="place-list">
-      <div class="place">
-        <a href="https://maps.app.goo.gl/RrjfLuLM6rPo2hYr5" target="_blank">
-          <img src="https://karuizawa.keizai.biz/mapnews/images/44/main.jpg" alt="軽井沢コモングラウンズ">
-          <div>・軽井沢コモングラウンズ</div>
-        </a>
-      </div>
-      <div class="place">
-        <a href="https://maps.app.goo.gl/HosTYmE3TpxyY69ZA" target="_blank">
-          <img src="https://www.karuizawataliesin.com/images/facility/facility01.jpg" alt="タリアセン">
-          <div>・タリアセン</div>
-        </a>
-      </div>
-      <div class="place">
-        <a href="https://maps.app.goo.gl/XSRWJYQkzKoLDCLe9" target="_blank">
-          <img src="https://www.karuizawa-psp.jp/image/top/mv.jpg" alt="軽井沢プリンスショッピングプラザ">
-          <div>・軽井沢プリンスショッピングプラザ</div>
-        </a>
-      </div>
-    </div>
+    <ul>
+      <li><a href="https://www.google.com/maps/place/軽井沢+コモングラウンズ/" target="_blank">・軽井沢コモングラウンズ</a></li>
+      <li><a href="https://www.google.com/maps/place/軽井沢+タリアセン/" target="_blank">・タリアセン</a></li>
+      <li><a href="https://www.google.com/maps/place/軽井沢+プリンスショッピングプラザ/" target="_blank">・軽井沢プリンスショッピングプラザ</a></li>
+    </ul>
 
     <h2>帰りの電車</h2>
     <p>軽井沢 (19:40発) → 東京 (20:52着)<br>
@@ -197,14 +136,13 @@
   <div id="map" class="tab-content">
     <h2>Googleマップ 一覧</h2>
     <ul>
-      <li><a href="https://maps.app.goo.gl/FfDWwNiEQhL7K2cp9" target="_blank">川上庵</a></li>
-      <li><a href="https://maps.app.goo.gl/PwkwDeRtqrbpAHQT9" target="_blank">旧軽井沢銀座通り</a></li>
-      <li><a href="https://maps.app.goo.gl/Go5US33oUPcwcb4g9" target="_blank">ハルニレテラス</a></li>
-      <li><a href="https://maps.app.goo.gl/oRCRhqqC5X5piVby6" target="_blank">GOOD AFTERNOON</a></li>
-      <li><a href="https://maps.app.goo.gl/Lu3yE2PRghhZmhVi9" target="_blank">osobar</a></li>
-      <li><a href="https://maps.app.goo.gl/RrjfLuLM6rPo2hYr5" target="_blank">軽井沢コモングラウンズ</a></li>
-      <li><a href="https://maps.app.goo.gl/HosTYmE3TpxyY69ZA" target="_blank">タリアセン</a></li>
-      <li><a href="https://maps.app.goo.gl/XSRWJYQkzKoLDCLe9" target="_blank">軽井沢プリンスショッピングプラザ</a></li>
+      <li><a href="https://www.google.com/maps/place/旧軽井沢銀座通り/" target="_blank">旧軽井沢銀座通り</a></li>
+      <li><a href="https://www.google.com/maps/place/ハルニレテラス/" target="_blank">ハルニレテラス</a></li>
+      <li><a href="https://www.google.com/maps/place/GOOD+AFTERNOON/@36.3404624,138.5978945,17z" target="_blank">GOOD AFTERNOON</a></li>
+      <li><a href="https://www.google.com/maps/place/osobar/" target="_blank">osobar</a></li>
+      <li><a href="https://www.google.com/maps/place/軽井沢+コモングラウンズ/" target="_blank">軽井沢コモングラウンズ</a></li>
+      <li><a href="https://www.google.com/maps/place/軽井沢+タリアセン/" target="_blank">タリアセン</a></li>
+      <li><a href="https://www.google.com/maps/place/軽井沢+プリンスショッピングプラザ/" target="_blank">軽井沢プリンスショッピングプラザ</a></li>
     </ul>
   </div>
 
