@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>軽井沢旅行</title>
+  <title>軽井沢旅行しおり</title>
   <style>
     :root {
       --green: #a4c3b2;
@@ -66,6 +66,32 @@
       text-decoration: underline;
     }
 
+    /* タイムライン */
+    .timeline {
+      position: relative;
+      margin: 2em 0;
+      padding-left: 40px;
+      border-left: 3px solid var(--accent);
+    }
+
+    .timeline-item {
+      margin-bottom: 1.5em;
+    }
+
+    .timeline-time {
+      font-weight: bold;
+      color: var(--accent);
+      margin-bottom: 0.2em;
+    }
+
+    .timeline-title {
+      font-weight: bold;
+    }
+
+    .timeline-content {
+      margin-left: 0.2em;
+    }
+
     ul {
       list-style: none;
       padding-left: 1em;
@@ -80,36 +106,6 @@
       padding-bottom: 0.3em;
       margin-top: 1.5em;
     }
-
-    input, textarea, button {
-      font-family: inherit;
-      font-size: 1em;
-    }
-
-    button {
-      padding: 0.5em 1em;
-      background-color: var(--accent);
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #3a6046;
-    }
-
-    #memoEntries li {
-      background: white;
-      padding: 1em;
-      border-left: 5px solid var(--green);
-      margin-bottom: 1em;
-      border-radius: 4px;
-    }
-
-    small {
-      color: gray;
-    }
   </style>
 </head>
 <body>
@@ -119,68 +115,81 @@
     <div class="tab active" data-tab="day1">5月1日</div>
     <div class="tab" data-tab="day2">5月2日</div>
     <div class="tab" data-tab="map">地図一覧</div>
-    <div class="tab" data-tab="memo">memo</div>
   </div>
 
   <div id="day1" class="tab-content active">
-    <h2>移動</h2>
-    <p>東京 (13:04発) → 軽井沢 (14:15着)<br>
-      あさま613号（北陸新幹線）／6号車 11番A/B</p>
-
-    <h2>昼食</h2>
-    <p>電車内で軽食</p>
-
-    <h2>到着後の行き先候補</h2>
-    <ul>
-      <li>
-        ・<a href="https://maps.app.goo.gl/cLnWei43GMYRr2yMA" target="_blank">旧軽井沢銀座通り</a>
-      </li>
-      <li>
-        ・<a href="https://maps.app.goo.gl/5pVHYEpkpAZtuudw8" target="_blank">ハルニレテラス</a><br>
-        <a href="https://www.instagram.com/harunireterrace/" target="_blank">公式Instagram</a>
-      </li>
-    </ul>
-
-    <h2>夕食</h2>
-    <ul>
-      <li>
-        🍴 <a href="https://maps.app.goo.gl/oRCRhqqC5X5piVby6" target="_blank">GOOD AFTERNOON</a><br>
-        <a href="https://www.instagram.com/goodafternoon_taproom?igsh=MTk2d3ltb2g2cjVocw==" target="_blank">公式Instagram</a>
-      </li>
-    </ul>
+    <h2>5月1日（木）</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">13:04</div>
+        <div class="timeline-title">東京発（あさま613号）</div>
+        <div class="timeline-content">6号車 11番A/B</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">14:15</div>
+        <div class="timeline-title">軽井沢着</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-title">昼食（電車内）</div>
+        <div class="timeline-content">お弁当など想定</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-title">旧軽井沢銀座通り</div>
+        <div class="timeline-content"><a href="https://maps.app.goo.gl/cLnWei43GMYRr2yMA" target="_blank">Googleマップ</a></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-title">ハルニレテラス</div>
+        <div class="timeline-content">
+          <a href="https://maps.app.goo.gl/5pVHYEpkpAZtuudw8" target="_blank">Googleマップ</a><br>
+          <a href="https://www.instagram.com/harunireterrace/" target="_blank">公式Instagram</a>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">16:30</div>
+        <div class="timeline-title">GOOD AFTERNOON</div>
+        <div class="timeline-content">
+          <a href="https://maps.app.goo.gl/oRCRhqqC5X5piVby6" target="_blank">Googleマップ</a><br>
+          <a href="https://www.instagram.com/goodafternoon_taproom?igsh=MTk2d3ltb2g2cjVocw==" target="_blank">公式Instagram</a>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div id="day2" class="tab-content">
-    <h2>朝食</h2>
-    <p>ホテルにて</p>
-
-    <h2>チェックアウト</h2>
-    <p>11:00</p>
-
-    <h2>昼食</h2>
-    <ul>
-      <li>
-        🍴 <a href="https://maps.app.goo.gl/dcm1hEs5XYEsE2Yx6" target="_blank">OSOBAR</a>
-      </li>
-    </ul>
-
-    <h2>行き先候補</h2>
-    <ul>
-      <li>
-        ・<a href="https://maps.app.goo.gl/UT9AKAqDbTt8bLRL9" target="_blank">軽井沢コモングラウンズ</a><br>
-        <a href="https://www.instagram.com/karuizawa_commongrounds?igsh=MTRvdWxuajB2aWV2cw==" target="_blank">公式Instagram</a>
-      </li>
-      <li>
-        ・<a href="https://maps.app.goo.gl/aELAa3d3HeKaN9f99" target="_blank">タリアセン</a>
-      </li>
-      <li>
-        ・<a href="https://maps.app.goo.gl/YJyWZGRWYeb7Gi9M9?g_st=com.google.maps.preview.copy" target="_blank">軽井沢プリンスショッピングプラザ</a>
-      </li>
-    </ul>
-
-    <h2>帰りの電車</h2>
-    <p>軽井沢 (19:40発) → 東京 (20:52着)<br>
-    自由席（変更可能）</p>
+    <h2>5月2日（金）</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-title">朝食（ホテル）</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">11:00</div>
+        <div class="timeline-title">チェックアウト</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-title">昼食：OSOBAR</div>
+        <div class="timeline-content"><a href="https://maps.app.goo.gl/dcm1hEs5XYEsE2Yx6" target="_blank">Googleマップ</a></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-title">軽井沢コモングラウンズ</div>
+        <div class="timeline-content">
+          <a href="https://maps.app.goo.gl/UT9AKAqDbTt8bLRL9" target="_blank">Googleマップ</a><br>
+          <a href="https://www.instagram.com/karuizawa_commongrounds?igsh=MTRvdWxuajB2aWV2cw==" target="_blank">公式Instagram</a>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-title">タリアセン</div>
+        <div class="timeline-content"><a href="https://maps.app.goo.gl/aELAa3d3HeKaN9f99" target="_blank">Googleマップ</a></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-title">軽井沢プリンスショッピングプラザ</div>
+        <div class="timeline-content"><a href="https://maps.app.goo.gl/YJyWZGRWYeb7Gi9M9" target="_blank">Googleマップ</a></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">19:40</div>
+        <div class="timeline-title">軽井沢発</div>
+        <div class="timeline-content">→ 東京（20:52 着）<br>自由席（変更可）</div>
+      </div>
+    </div>
   </div>
 
   <div id="map" class="tab-content">
@@ -192,27 +201,11 @@
       <li><a href="https://maps.app.goo.gl/dcm1hEs5XYEsE2Yx6" target="_blank">OSOBAR</a></li>
       <li><a href="https://maps.app.goo.gl/UT9AKAqDbTt8bLRL9" target="_blank">軽井沢コモングラウンズ</a></li>
       <li><a href="https://maps.app.goo.gl/aELAa3d3HeKaN9f99" target="_blank">タリアセン</a></li>
-      <li><a href="https://maps.app.goo.gl/YJyWZGRWYeb7Gi9M9?g_st=com.google.maps.preview.copy" target="_blank">軽井沢プリンスショッピングプラザ</a></li>
+      <li><a href="https://maps.app.goo.gl/YJyWZGRWYeb7Gi9M9" target="_blank">軽井沢プリンスショッピングプラザ</a></li>
     </ul>
   </div>
 
-  <div id="memo" class="tab-content">
-    <h2>旅行メモ・共有ノート</h2>
-    <form id="memoForm">
-      <p><label>タイトル：<br><input type="text" id="memoTitle" required style="width: 100%;"></label></p>
-      <p><label>名前：<br><input type="text" id="memoAuthor" required style="width: 100%;"></label></p>
-      <p><label>内容：<br><textarea id="memoContent" rows="4" required style="width: 100%;"></textarea></label></p>
-      <p><button type="submit">投稿する</button></p>
-    </form>
-
-    <div id="memoList">
-      <h3>投稿一覧</h3>
-      <ul id="memoEntries"></ul>
-    </div>
-  </div>
-
   <script>
-    // タブ切り替え
     const tabs = document.querySelectorAll(".tab");
     const contents = document.querySelectorAll(".tab-content");
 
@@ -223,26 +216,6 @@
         tab.classList.add("active");
         document.getElementById(tab.dataset.tab).classList.add("active");
       });
-    });
-
-    // memo 投稿機能
-    const form = document.getElementById('memoForm');
-    const list = document.getElementById('memoEntries');
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      const title = document.getElementById('memoTitle').value.trim();
-      const author = document.getElementById('memoAuthor').value.trim();
-      const content = document.getElementById('memoContent').value.trim();
-      const now = new Date().toLocaleString();
-
-      if (title && author && content) {
-        const entry = document.createElement('li');
-        entry.innerHTML = `<strong>${title}</strong>（${author}）<br>${content}<br><small>投稿日時：${now}</small>`;
-        list.prepend(entry);
-        form.reset();
-      }
     });
   </script>
 </body>
